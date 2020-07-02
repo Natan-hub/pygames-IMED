@@ -1,0 +1,10 @@
+apple_pos = on_grid_random()
+    apple = pygame.Surface((10,10))
+    apple.fill((255,0,0))
+
+    my_direction = LEFT
+
+    clock = pygame.time.Clock()
+
+    font = pygame.font.Font('freesansbold.ttf', 18)
+    score = 0
