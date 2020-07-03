@@ -19,10 +19,10 @@ def game_loop():
     DOWN = 2
     LEFT = 3
 
-    jogar = str(input("sim: ")).lower()
-    if jogar == "sim":
-        input("Digite seu nome: ").lower()
-        input("Digite seu email: ").lower()
+    arquivo = open("jogadores.txt", "a")
+    nome = input("Digite aqui seu nome: ")
+    email = input("Digite seu email: ")
+    arquivo.write("\nNome: "+nome+ "\nE-mail: "+email+ "\n")
     pygame.init()
     screen = pygame.display.set_mode((600, 600))
     pygame.display.set_caption('Snake')
